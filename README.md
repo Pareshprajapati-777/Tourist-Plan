@@ -1,133 +1,111 @@
-# Tourist-Plan 
-# 🌍 Tourist Guy
-🌍 Tourist Guy is a Python-based travel planner that helps users choose destinations, estimate trip budgets, compare packages, visualize expense breakdowns, and explore routes on interactive maps. ✈️📊 Smart, simple, and engaging trip planning in one project. 🧳
+# 🌍 Tourist Guy — Travel Planner
 
-**Tourist Guy** is a Python-based travel planning project built in Jupyter Notebook that helps users choose a destination, estimate trip costs, select travel packages, and visualize routes on an interactive map. It combines trip budgeting, expense analysis, and travel route planning into one simple and engaging project.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/Folium-Interactive%20Maps-77B829" alt="Folium">
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-11557C" alt="Matplotlib">
+</p>
 
----
+> ✈️ Plan a sample trip, estimate expenses, compare package levels, and visualize destination routes on an interactive map.
+
+## 📌 About the Project
+
+**Tourist Guy** is a Python travel-planning project built in a Jupyter Notebook. It estimates a trip budget based on destination, group size, trip duration, package choice, and travel mode. It also visualizes expense categories and displays destination routes using Folium.
+
+This is a learning project; prices and travel estimates should not be treated as live quotes.
 
 ## ✨ Features
 
-- 🧳 Select from multiple tourist destinations
-- 👨‍👩‍👧‍👦 Plan trips based on number of travelers
-- 📅 Choose trip duration
-- 💼 Pick a travel package:
-  - Low
-  - Mid
-  - High
-- 💰 Estimate total trip cost
-- 🎁 Apply special discount for groups above 10 people
-- 🚗 Choose travel mode:
-  - Car
-  - Bus
-  - Train
-  - Flight
-- 📊 View expense distribution using a pie chart
-- 🗺️ Explore trip routes with interactive **Folium maps**
-- 📍 Visit multiple attractions across selected destinations
+- 🧭 Choose from supported destinations
+- 👨‍👩‍👧‍👦 Enter the number of travelers and trip duration
+- 💼 Select a Low, Mid, or High package
+- 🚗 Choose a travel mode: car, bus, train, or flight
+- 💰 Estimate travel, food, hotel, activities, and other costs
+- 🎁 Apply the documented group discount for groups larger than 10
+- 📊 Visualize expense distribution with a pie chart
+- 🗺️ Explore routes and attraction markers with Folium
 
----
+## 🗺️ Supported Destinations
 
-## 📌 Available Destinations
+- 🇮🇳 Agra
+- 🇮🇳 Goa
+- 🏔️ Himachal Pradesh
+- 🇹🇭 Thailand
+- 🇲🇺 Mauritius
 
-The project currently supports the following destinations:
+## 🛠️ Tech Stack
 
-1. 🕌 Agra  
-2. 🏖️ Goa  
-3. 🏔️ Himachal Pradesh  
-4. 🏝️ Thailand  
-5. 🌄 Mauritius  
-
----
-
-## ⚙️ Technologies Used
-
-- **Python**
-- **Jupyter Notebook**
-- **Folium** – for interactive maps
-- **Matplotlib** – for expense visualization
-
----
+| Tool | Purpose |
+| --- | --- |
+| 🐍 Python | Planning logic and cost calculations |
+| 📓 Jupyter Notebook | Interactive execution |
+| 🗺️ Folium | Interactive route maps |
+| 📊 Matplotlib | Expense chart visualization |
 
 ## 📂 Project Structure
 
+```text
+Tourist-Plan/
+└── Tourist Project.ipynb
+```
 
-Tourist Project.ipynb
-This notebook contains the complete travel planning logic, user input flow, cost estimation, chart visualization, and route mapping.
+## 🚀 Setup & Run
 
-# 🚀 How It Works
-The program follows these steps:
+### 1️⃣ Clone the repository
 
-User selects a destination
-User enters:
-number of people
-number of days
-preferred package
-The system calculates:
-base package cost
-travel/fuel/ticket cost
-food expenses
-hotel cost
-ride/activity expenses
-other expenses
-If travelers are more than 10, a 10% discount is applied
-A pie chart shows expense distribution
-A map route is generated with key tourist spots
-🛠️ Installation
-Make sure Python is installed, then install the required libraries:
-ip install folium matplotlib
-If you are using Jupyter Notebook, launch it with:
+```bash
+git clone https://github.com/Pareshprajapati-777/Tourist-Plan.git
+cd Tourist-Plan
+```
 
-Copyjupyter notebook
-# ▶️ Usage
-Open the notebook:
-CopyTourist Project.ipynb
-Run all cells
-Enter your trip details when prompted
-Review:
-trip summary
-estimated budget
-expense chart
-travel map
-# 📊 Expense Categories
-The total estimated budget is divided into:
+### 2️⃣ Install dependencies
 
-Travel
-Food
-Hotel
-Ride Activity
-Other Expenses
-This helps users better understand how their travel budget is distributed.
+```bash
+python -m pip install notebook folium matplotlib
+```
 
-# 🗺️ Route Visualization
-The project uses Folium to create an interactive route map starting from Ahmedabad and showing major tourist attractions for the selected destination.
-Each route includes multiple stops and markers for a more realistic travel experience.
+### 3️⃣ Start Jupyter
 
-# 🎯 Project Goal
-The main goal of this project is to make trip planning:
+```bash
+jupyter notebook
+```
 
-easier ✅
-more visual ✅
-budget-friendly ✅
-interactive ✅
-It is especially useful for beginners learning Python through a real-world project.
+Open **`Tourist Project.ipynb`** and run the notebook cells in order.
 
-# 🔮 Future Improvements
-Possible enhancements for this project:
+## 🧭 How It Works
 
-Add more destinations 🌍
-Improve user interface 🎨
-Export trip summary as PDF 📄
-Add hotel and transport recommendations 🏨
-Connect with real-time map or travel APIs 🔗
-Build a web app version using Flask or Streamlit 💻
-🤝 Contributing
-Contributions, suggestions, and improvements are welcome.
-Feel free to fork this repository and create a pull request.
+1. Select a destination.
+2. Enter the group size and number of days.
+3. Choose a package level and travel mode.
+4. Review the estimated budget and expense categories.
+5. Explore the generated chart and interactive map.
 
-📜 License
-This project is open-source and available under the MIT License.
+## 📊 Expense Categories
 
-# 👨‍💻 Author
-Developed by Paresh Prajapati ✨
-If you like this project, don’t forget to star ⭐ the repository.
+The project groups estimated expenses into travel, food, hotel, ride/activity, and other costs. The final estimate depends on the assumptions and values defined in the notebook.
+
+## ⚠️ Notes
+
+- 💵 Budget amounts are estimates from the project logic, not live supplier prices.
+- 🗺️ Map content and routes depend on the locations configured in the notebook.
+- 🔄 Destination options and pricing can be changed in the notebook source.
+- 📌 Verify current prices, transport schedules, and travel requirements before making real travel bookings.
+
+## 🔮 Future Improvements
+
+- 🌐 Integrate live mapping or travel APIs
+- 🏨 Add editable hotel and transport prices
+- 📄 Export itineraries and budget summaries
+- 🧳 Add more destinations and attractions
+- 💻 Build a web interface with Streamlit
+
+## 👨‍💻 Author
+
+**Paresh Prajapati**
+
+🔗 [GitHub Profile](https://github.com/Pareshprajapati-777)
+
+---
+
+🌍 **Plan smarter, visualize your budget, and explore new destinations.**
